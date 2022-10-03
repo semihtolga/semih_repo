@@ -1,0 +1,20 @@
+{
+  "name": "semih",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semihtolga/semih_repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semihtolga/semih_repo/issues"
+  },
+  "homepage": "https://github.com/semihtolga/semih_repo#readme"
+}
