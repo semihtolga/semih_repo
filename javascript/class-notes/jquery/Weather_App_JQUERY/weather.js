@@ -118,20 +118,20 @@ const getWeatherDataFromApi = async () => {
             //     //$(e.target).attr("src", iconUrlAWS);
             // });
 
-            Animation
-            $(".city").click((e)=>{
-                $(e.target).animate({left:'250px'});
-            });
+            // Animation
+            // $(".city").click((e)=>{
+            //     $(e.target).animate({left:'250px'});
+            // });
 
-            //Jquery chaining slideUp vs. slideDown
-            $(".city img").click((e) => {
-                $(e.target).slideUp(2000).slideDown(2000);
-            });
+            // //Jquery chaining slideUp vs. slideDown
+            // $(".city img").click((e) => {
+            //     $(e.target).slideUp(2000).slideDown(2000);
+            // });
 
-            hide() vs show()
-            $(".city img").click((e) => {
-                $(e.target).hide();
-            });
+            // hide() vs show()
+            // $(".city img").click((e) => {
+            //     $(e.target).hide();
+            // });
 
             //formJS.reset();
             formJquery.trigger("reset");
