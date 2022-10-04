@@ -31,7 +31,8 @@ $(window).on("load", () => {
 
 $(document).ready(() => {
     console.log("DOMContentLoaded");
-    localStorage.setItem("apiKey", EncryptStringAES("4d8fb5b93d4af21d66a2948710284366"));
+    localStorage.setItem("apiKey", "JqpqM0UeaCQACG2RM5CfD75YSPg6qKnDugv8i8ut+E2WX8wSvs2pRd2TypM3D8Vh")
+    // localStorage.setItem("apiKey", EncryptStringAES("b519d07fecbf3c404d3220d9755003f1"));
 });
 
 // formJquery.on("submit", (e)=>{
