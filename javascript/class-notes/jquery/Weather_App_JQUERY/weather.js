@@ -1,4 +1,4 @@
-const formJS = document.querySelector("form")[0];
+const formJS = document.querySelectorAll("form")[0];
 // const formJquery =  jQuery("from"); // query selectorAll gibi çoklu seçime imkan tanıyor.
 //JQUERY === $  dolar işareti kullanılır
 // const formJquery =  jQuery("from").eq(0);
@@ -14,7 +14,7 @@ const listJQ = $(".cities").eq(0);
 
 
 // get(index), eq(index) Jquery' nin index alma yöntemi. daha çok elementq kullanılıyor.
-// get(index) ==> toArray(get())
+// get(index) ==> toArray(get())  get ile array'e çeviriyor.
 
 //load VS DOMContentLoaded  
 // DOMContentLoaded ==> means page rendered, DOM is ready.
@@ -34,7 +34,7 @@ $(window).on("load", () =>{
 // });
 
 
-$(document).ready(()=>{
+$(document).ready(() => {
     console.log("DOMContentLoaded");
 });
 // formJquery.on("submit", (e)=>{  
@@ -42,14 +42,15 @@ $(document).ready(()=>{
 //     getWeatherDataFromApi();
 // });
 
-//   console.log(formJquery)
-const getWeatherDataFromApi  = () =>{
-    console.log("AJAX Func. is called");
-}
+
 formJquery.submit((e)=>{
     e.preventDefault();
     getWeatherDataFromApi();
 });
 
+const getWeatherDataFromApi  = () =>{
+    console.log("AJAX Func. is called");
+}
 
 // XMLHTTPPREQUEST(xhr) vs. fetch() vs. axios vs. $.ajax
+
