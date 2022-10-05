@@ -69,7 +69,33 @@ const getWeatherDataFromApi = () => {
             console.log(response)
 
             const {main, sys, name, weather}= response;
-             
+            const iconUrlAWS = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0].icon}.svg`;
+            //alternative iconUrl
+            const iconUrl = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+
+            //js => documnent.createElement("li")
+
+            // const createdLi2 = $(document.createElement("li"))
+            const createdLi = $ ("<li></li>");
+            createdLi.addClass("city");
+            createdLi.html(`
+            <h2 class="city-name" data-name="${name}, ${sys.country}">
+            <span>${name}</span>
+            <sup>${sys.country}</sup>
+        </h2>
+        <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+        <figure>
+            <img class="city-icon" src="${iconUrl}">
+            <figcaption>${weather[0].description}</figcaption>
+        </figure>`);
+
+
+        //append vs. prepend both in JS AND JQUERy
+        listJQ.prepend(createdLi);
+        //formJS.reset(); 
+        formJquery.trigger("reset"); // reset de submit gibi bir event. form un reset event ini tetikliyor.
+
+
         },
         beforeSend: (request) => {
             console.log("before ajax send");
