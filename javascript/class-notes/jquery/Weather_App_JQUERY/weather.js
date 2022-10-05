@@ -1,4 +1,4 @@
-const formJS = document.querySelector("form");
+const formJS = document.querySelector("form")[0];
 // const formJquery =  jQuery("from"); // query selectorAll gibi çoklu seçime imkan tanıyor.
 //JQUERY === $  dolar işareti kullanılır
 // const formJquery =  jQuery("from").eq(0);
@@ -37,17 +37,19 @@ $(window).on("load", () =>{
 $(document).ready(()=>{
     console.log("DOMContentLoaded");
 });
-
-// formJquery.on("submit", (e)=>{
+// formJquery.on("submit", (e)=>{  
 //     e.preventDefault();
 //     getWeatherDataFromApi();
 // });
 
-formJquery.on("submit", (e)=>{
+//   console.log(formJquery)
+const getWeatherDataFromApi  = () =>{
+    console.log("AJAX Func. is called");
+}
+formJquery.submit((e)=>{
     e.preventDefault();
     getWeatherDataFromApi();
 });
 
-const getWeatherDataFromApi  = () =>{
-    console.log("AJAX Func. is called");
-}
+
+// XMLHTTPPREQUEST(xhr) vs. fetch() vs. axios vs. $.ajax
