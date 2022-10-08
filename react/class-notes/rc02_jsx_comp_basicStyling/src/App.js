@@ -3,8 +3,6 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-
-
 //? React,JSX kullanmaktadir.
 //? JSX'de, HTMl elementleri dogrudan JS icerisinde kullanilabilir
 
@@ -22,9 +20,11 @@ import Header from "./components/Header";
 //? App componentinin function declaration ile tanimlanmasi
 function App() {
   return (
+    //* JSX
+    //? stillendirme yapilmayacaksa container icin <> kullanilabilir
     <>
       <Header />
-      <Content/>
+      <Content />
       <Footer />
     </>
   );
