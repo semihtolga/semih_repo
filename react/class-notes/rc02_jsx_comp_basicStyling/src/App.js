@@ -3,6 +3,8 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
+
+
 //? React,JSX kullanmaktadir.
 //? JSX'de, HTMl elementleri dogrudan JS icerisinde kullanilabilir
 
