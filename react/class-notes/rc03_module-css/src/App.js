@@ -3,7 +3,7 @@ import data from "./util/data";
 
 function App() {
   // JS
-
+  
   return (
     //JSX
     <>
