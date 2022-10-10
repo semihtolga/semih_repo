@@ -8,6 +8,8 @@ import ButonStyle from "./buton.module.css";
 
 //* ORN:moduleName["class-adi"]
 
+
+
 const Buton = ({ btn }) => {
   console.log(btn);
   return (
