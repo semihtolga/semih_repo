@@ -1,0 +1,25 @@
+@import "variables";
+
+.container {
+  border: 1px solid red;
+  text-align: center;
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.7);
+    margin: 1.5rem auto;
+    max-width: 300px;
+    img {
+      width: 40%;
+      border-radius: 50%;
+      margin: 1rem;
+    }
+    h1 {
+      color: red;
+    }
+    h2 {
+      color: green;
+    }
+  }
+}
