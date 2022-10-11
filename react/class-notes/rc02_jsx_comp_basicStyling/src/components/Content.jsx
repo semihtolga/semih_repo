@@ -43,6 +43,6 @@ const Content = () => {
       </p>
     </div>
   );
-};
+
 
 export default Content;
