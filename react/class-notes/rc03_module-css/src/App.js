@@ -7,11 +7,10 @@ function App() {
   return (
     //JSX
     <>
-      {data.map((item) => {
-        console.log(item);
-        const { id, language, img, btnName } = item; //! destr.
-        return <Card key={id} language={language} img={img} btn={btnName} />;
-      })}
+ {data.map((item) => {
+    const { id, language, img, btnName  } = item; //! destr.
+    return <Card key={id} language={language} img={img} btn={btnName} />;
+ })}
     </>
   );
 }

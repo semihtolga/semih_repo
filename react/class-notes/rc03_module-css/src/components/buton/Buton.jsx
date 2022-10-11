@@ -1,4 +1,3 @@
-// import "./Buton.css";
 import ButonStyle from "./buton.module.css";
 
 //* Eğer CSS'deki class adi kebap-case seklinde yazilmis ise
@@ -7,8 +6,6 @@ import ButonStyle from "./buton.module.css";
 //* en garanti yontemdir.
 
 //* ORN:moduleName["class-adi"]
-
-
 
 const Buton = ({ btn }) => {
   console.log(btn);
@@ -20,3 +17,4 @@ const Buton = ({ btn }) => {
 };
 
 export default Buton;
+
