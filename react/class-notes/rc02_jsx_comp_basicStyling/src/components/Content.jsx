@@ -19,15 +19,16 @@ const Content = () => {
   //* JS alanı
   const imgStyle = {
     display: "block",
-    width: "300px",
-    margin: "1rem auto",
+    width:"300px",
+    margin: "1rem"
+  }
   };
   return (
     //* JSX alanı
     <div>
       {/* Inline Style */}
-      <h2 style={{ color: "red" }}>React JS</h2>
-      <p style={{ backgroundColor: "lightgreen" }}>
+      <h2 style={{color:"red"}}>React JS</h2>
+      <p style={{backgroundColor: "lightgreen"}}>
         React, Kullanici arabirimi tasarlamak icin kullanilan bir JS
         kütüphanesidir.
       </p>
@@ -36,13 +37,9 @@ const Content = () => {
         src="https://cdn.pixabay.com/photo/2017/02/15/13/40/tulips-2068692__340.jpg"
         alt="img1"
       />
-      <img style={imgStyle} src={img2} alt="img2" />
+      <img src={img2} alt="img2" />
       <p className="par-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quaerat
-        exercitationem repellendus, perspiciatis quo beatae magni distinctio
-        quis ullam mollitia cupiditate ipsa consectetur asperiores? Illum dolore
-        at, quidem nulla consequatur reiciendis cupiditate eius iusto fugit
-        omnis dolorum quis odio ut?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur culpa nulla non placeat quas, nihil harum quia exercitationem asperiores nemo debitis officia beatae deleniti inventore vitae id atque. Magni, dolorem?
       </p>
     </div>
   );
